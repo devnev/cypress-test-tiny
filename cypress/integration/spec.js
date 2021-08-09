@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 describe('page', () => {
   it('works', () => {
-    cy.visit('https://example.cypress.io')
+    cy.visit('/index.html')
+    cy.get('input').attachFile('example.json')
   })
 })
